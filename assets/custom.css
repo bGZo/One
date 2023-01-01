@@ -15,8 +15,8 @@ body {
   align-items: center;
   
   flex-direction: column;
-  
 }
+
 
 .sentence { 
   font-size: 3rem;
@@ -32,19 +32,15 @@ body {
 .sentence:after  { content: "」"; }
 
 .author,
-.source{
+.source {
   display: inline-block;
   font-size: 1.5em;
+  
 }
 .source:before{ content: " via《"; }
 .source:after{ content: "》"; }
 .author:before{ content: "by ";}
 .author:after{ content: " ";}
-.more {
-  margin-top: .5rem;
-  display: block;
-  font-size: 1.5em;
-}
 
 cite{
   margin-top: 1rem;
