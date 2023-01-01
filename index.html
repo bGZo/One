@@ -1,0 +1,14 @@
+---
+layout: dev
+title: One
+---
+
+<main id="article">
+  {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
+  <div class="sentence"><a href="{{ site.posts[random].url }}">{{ site.posts[random].title }}</a></div>
+  <cite>
+    <div class="author">{{ site.posts[random].author }} </div>
+    <div class="source">{{ site.posts[random].source }} </div> 
+    <a class="more"href="/one/">View more</a>
+  </cite>
+</main>

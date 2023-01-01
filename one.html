@@ -1,0 +1,15 @@
+---
+layout: dev
+title: Archive
+permalink: /one
+---
+
+{% for post in site.posts %}
+<main id="article">
+    <div class="sentence"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    <cite>
+        <div class="author">{{ post.author }} </div>
+        <div class="source">{{ post.source }}</div>  
+    </cite>
+</main>
+{% endfor %}

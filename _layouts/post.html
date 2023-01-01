@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="author" content="bGZo">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<link rel="icon" type="image/png" sizes="32x32" href="">
+	<link rel="icon" type="image/png" sizes="16x16" href="">
+	<base target="_blank">
+    <link rel="stylesheet" href="/assets/custom.css">
+</head>
+
+<body>
+	<header>
+	</header>
+    <main id="article">
+        <div class="sentence">{{ page.title }}</div>
+        <cite>
+          <div class="author">{{ page.author }} </div>
+          <div class="source">{{ page.source }}</div>  
+        </cite>
+      </main>
+      
+      <footer class="note">
+		{% if page.note %}
+			{{page.note}}
+	 	{% else %}
+		 	Design by <a href="http://blog.bgzo.cc">bGZo</a>
+	 	{% endif %}
+      </footer>
+</body>
+</html>

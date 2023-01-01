@@ -1,0 +1,7 @@
+title: One
+description: One wisdom sentence
+author: bGZo
+permalink: /one/:title.html
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
