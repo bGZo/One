@@ -1,7 +1,9 @@
 title: One
 description: One wisdom sentence
 author: bGZo
+base: https://one.bgzo.cc
 permalink: /one/:title.html
+preview: https://unpkg.com/bgzo@23.1.1/img/one-preview.png
 plugins:
   - jekyll-feed
   - jekyll-sitemap
