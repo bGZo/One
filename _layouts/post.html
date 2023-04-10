@@ -2,21 +2,21 @@
 <html lang="zh-cmn-Hans">
 
 <head>
-	<meta charset="UTF-8">
-	<title>{{ page.title }}</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-	<meta name="author" content="{{page.author}}">
-	<meta name="description" content="{{page.source}}">
-	<meta property="og:url" content="{{page.base}}">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="{{ page.title }}">
-	<meta property="og:description" content="{{ page.source }}">
-	<meta property="og:image" content="{{site.preview}}">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:description" content="{{ page.source }}">
-	<meta name="twitter:title" content="{{ page.title }}">
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="author" content="{{page.author}}">
+  <meta name="description" content="{{page.source}}">
+  <meta property="og:url" content="{{page.base}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.source }}">
+  <meta property="og:image" content="{{site.preview}}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="{{ page.source }}">
+  <meta name="twitter:title" content="{{ page.title }}">
 
-	<link rel="apple-touch-icon" sizes="180x180" href="http://unpkg.com/bgzo/fav/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://unpkg.com/bgzo/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="http://unpkg.com/bgzo/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="http://unpkg.com/bgzo/fav/favicon-16x16.png">
     <link rel="manifest" href="http://unpkg.com/bgzo/fav/site.webmanifest">
@@ -24,12 +24,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="/assets/custom.css">
+  <link rel="stylesheet" href="/assets/custom.css">
 </head>
 
 <body>
-	<header>
-	</header>
+  <header>
+  </header>
     <main id="article">
         <div class="sentence">{{ page.title }}</div>
         <cite>
@@ -39,11 +39,11 @@
       </main>
       
       <footer class="note">
-		{% if page.note %}
-			{{page.note}}
-	 	{% else %}
-		 	Design by <a href="http://blog.bgzo.cc">bGZo</a>
-	 	{% endif %}
+        {% if page.note and page.chapter %}
+          <a href="{{page.note}}"> {{page.chapter}} </a>
+        {% else %}
+          Design by <a href="http://blog.bgzo.cc">bGZo</a>
+        {% endif %}
       </footer>
 </body>
 </html>
